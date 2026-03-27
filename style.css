@@ -34,7 +34,7 @@ body {
 }
 
 
-/* MENU */
+/* MENU NAVBAR */
 .menu {
   list-style: none;
   display: flex;
@@ -79,7 +79,7 @@ section {
   gap: 40px;
 }
 
-/* TEXTO */
+/* TEXTO HERO */
 .hero-text {
   flex: 1;
 }
@@ -96,7 +96,7 @@ section {
   margin-bottom: 25px;
 }
 
-/* BOTÃO */
+/* BOTÃO HERO */
 .hero-text a {
   display: inline-block;
   padding: 12px 28px;
@@ -128,7 +128,7 @@ section {
   }
 }
 
-/* IMAGEM */
+/* IMAGEM HERO */
 .image {
   flex: 1;
   display: flex;
