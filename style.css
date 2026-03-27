@@ -80,24 +80,24 @@ section {
 }
 
 /* TEXTO HERO */
-.hero-text {
+.text-hero {
   flex: 1;
 }
 
-.hero-text h1 {
+.text-hero h1 {
   font-size: 48px;
   color: #FC4C02;
   margin-bottom: 15px;
 }
 
-.hero-text p {
+.text-hero p {
   font-size: 18px;
   color: #B3B3B3;
   margin-bottom: 25px;
 }
 
 /* BOTÃO HERO */
-.hero-text a {
+.text-hero a {
   display: inline-block;
   padding: 12px 28px;
   background: #FC4C02;
@@ -108,12 +108,12 @@ section {
   transition: 0.3s;
 }
 
-.hero-text a:hover {
+.text-hero a:hover {
   background: #FF6A2A;
   transform: scale(1.05);
 }
 
-.hero-text {
+.text-hero {
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -141,5 +141,63 @@ section {
   width: 100%;
   border-radius: 10px;
   filter: brightness(0.9);
+}
+
+/* SOBRE */
+#sobre {
+  padding: 80px 40px;
+  background: #111111;
+}
+
+/* CONTAINER PADRÃO - REUTILIZADO */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* IMG PADRÃO - REUTILIZADO */
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  max-width: 600px;
+}
+
+.image .image-sobre {
+  width: 100%;
+  border-radius: 10px;
+  filter: brightness(0.9);
+}
+
+/* TEXTO SOBRE */
+.text-sobre h2 {
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.text-sobre p {
+  font-size: 16px;
+  color: #B3B3B3;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.text-sobre h2::after {
+  content: "";
+  display: block;
+
+  width: 60px;
+  height: 3px;
+
+  background: #FC4C02;
+  margin-top: 10px;
 }
 
