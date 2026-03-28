@@ -43,7 +43,7 @@ Este projeto foi desenvolvido com o objetivo de praticar:
 
 ## 📸 Preview
 
-### 🏠 Hero (Página inicial)
+### 🏠 Inicio
 Seção principal com destaque visual:
 
 ![Hero](./assets/home-readme.png)
