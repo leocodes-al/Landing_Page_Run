@@ -293,12 +293,12 @@ section {
   align-items: center;
 
   padding: 0 40px;
-  background: #111111;
+  background: #FFFFFF;
 }
 
 #equipamentos h2 {
   font-size: 36px;
-  color: #FFFFFF;
+  color: #FC4C02;
   margin-bottom: 50px;
   position: relative;
 }
