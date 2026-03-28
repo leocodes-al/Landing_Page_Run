@@ -1,6 +1,6 @@
 # 🏃‍♂️ Landing Page - Corrida
 
-Uma landing page moderna sobre corrida de rua, desenvolvida com foco em design, organização de layout e experiência do usuário.
+`Uma landing page moderna sobre corrida de rua.
 
 ---
 
@@ -43,7 +43,7 @@ Este projeto foi desenvolvido com o objetivo de praticar:
 
 ## 📸 Preview
 
-### 🏠 Hero (Página inicial)
+### 🏠 Início
 Seção principal com destaque visual:
 
 ![Hero](./assets/home-readme.png)
