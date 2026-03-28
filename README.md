@@ -1,6 +1,6 @@
 # 🏃‍♂️ Landing Page - Corrida
 
-Uma landing page moderna sobre corrida de rua, desenvolvida com foco em design, organização de layout e experiência do usuário.
+Uma landing page moderna sobre corrida de rua.
 
 ---
 
