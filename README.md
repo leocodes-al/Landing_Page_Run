@@ -1,6 +1,6 @@
 # 🏃‍♂️ Landing Page - Corrida
 
-`Uma landing page moderna sobre corrida de rua.
+Uma landing page moderna sobre corrida de rua, com foco em design limpo, organização de conteúdo e responsividade.
 
 ---
 
@@ -11,15 +11,27 @@
 
 ---
 
+## 📱 Responsividade
+
+O projeto foi adaptado para diferentes tamanhos de tela, garantindo uma boa visualização em:
+
+- 📱 Celulares  
+- 💻 Notebooks  
+- 🖥️ Computadores  
+
+Foram utilizados ajustes de layout com CSS para melhorar a experiência em cada dispositivo.
+
+---
+
 ## 🎯 Funcionalidades
 
-- Layout moderno estilo marca esportiva  
-- Seções informativas sobre corrida  
-- Explicação de termos importantes (Pace, RP, etc.)  
+- Layout moderno inspirado em marcas esportivas  
+- Seções informativas sobre corrida de rua  
+- Explicação de termos importantes (Pace, RP, Distância)  
 - Guia para iniciantes  
 - Seção de equipamentos  
 - Galeria de imagens  
-- Footer com informações finais  
+- Navegação por âncoras com scroll suave  
 
 ---
 
@@ -28,16 +40,10 @@
 Este projeto foi desenvolvido com o objetivo de praticar:
 
 - Estruturação de páginas com HTML  
-- Estilização com CSS
-- Organização de layout profissional  
+- Estilização com CSS  
+- Construção de layouts responsivos  
+- Organização de código  
 - Boas práticas de desenvolvimento front-end  
-
----
-
-## ⚠️ Melhorias futuras
-
-- 📱 Responsividade (em desenvolvimento)   
-- 🌐 Deploy do projeto  
 
 ---
 
@@ -79,7 +85,7 @@ Sugestões de itens essenciais para começar a correr:
 ---
 
 ### 🖼️ Galeria
-Imagens relacionadas a corrida:
+Imagens relacionadas à corrida:
 
 ![Galeria](./assets/galeria-readme.png)
 
@@ -87,4 +93,4 @@ Imagens relacionadas a corrida:
 
 ## 👨‍💻 Autor
 
-Leonardo Nascimento  
+Leonardo Nascimento

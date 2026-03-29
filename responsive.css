@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  /* CONTAINER */
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* HERO */
+  #hero {
+    padding: 0 20px;
+  }
+
+  .text-hero p {
+    font-size: 16px;
+  }
+
+  /* IMAGENS */
+  .image {
+    max-width: 100%;
+  }
+
+  /* SECTIONS */
+  section {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+
+  /* SOBRE */
+  .text-sobre p {
+    max-width: 100%;
+  }
+
+  /* GALERIA */
+  .grid-galeria {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+}
