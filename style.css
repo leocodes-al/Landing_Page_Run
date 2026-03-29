@@ -268,8 +268,8 @@ section {
 }
 
 .text-comecar ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 20px;
 }
 
 .text-comecar ul li {
@@ -278,14 +278,6 @@ section {
   margin-bottom: 12px;
   position: relative;
   padding-left: 25px;
-}
-
-.text-comecar ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #FC4C02;
-  font-size: 18px;
 }
 
 /* EQUIPAMENTOS */

@@ -40,6 +40,10 @@
     max-width: 100%;
   }
 
+  .cards-equip {
+    grid-template-columns: 1fr;
+  }
+
   .cards-termos {
     grid-template-columns: 1fr;
   }
