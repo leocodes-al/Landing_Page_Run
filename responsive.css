@@ -40,6 +40,10 @@
     max-width: 100%;
   }
 
+  .cards-termos {
+    grid-template-columns: 1fr;
+  }
+
   /* GALERIA */
   .grid-galeria {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
