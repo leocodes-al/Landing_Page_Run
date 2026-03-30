@@ -348,9 +348,12 @@ section {
 
 /* GALERIA */
 #galeria {
-  padding: 100px 40px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
   background: #0F0F0F;
-  text-align: center;
 }
 
 #galeria h2 {
