@@ -1,162 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
-  <title>Corrida de Rua</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Corrida de Rua</title>
+  </head>
 
-<body>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+          <h2>RunGuide</h2>
+          <ul class="menu">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#termos">Termos</a></li>
+            <li><a href="#comecar">Como Começar</a></li>
+            <li><a href="#treino">Tipos de Treino</a></li>
+            <li><a href="#equipamentos">Equipamentos</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+          </ul>
 
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar">
-      <h2>RunGuide</h2>
-      <ul class="menu">
-        <li><a href="#hero">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#termos">Termos</a></li>
-        <li><a href="#comecar">Como Começar</a></li>
-        <li><a href="#equipamentos">Equipamentos</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-      </ul>
-    </nav>
-  </header>
+          <div id="menu-btn">☰</div>
+        </nav>
+    </header>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="container">
-      <div class="text-hero">
-        <h1>Corrida de Rua</h1>
-        <p>Aprenda. Evolua. Comece hoje.</p>
-        <a href="#comecar">Começar agora</a>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container">
+        <div class="text-hero">
+          <h1>Corrida de Rua</h1>
+          <p>Aprenda. Evolua. Comece hoje.</p>
+          <a href="#comecar">Começar agora</a>
+        </div>
+
+        <div class="image">
+          <img
+            src="img/img-hero.jpeg"
+            alt="Equipe de Corredores"
+            class="image-hero"
+          />
+        </div>
       </div>
+    </section>
 
-      <div class="image">
-        <img src="img/img-hero.jpeg" alt="Equipe de Corredores" class="image-hero">
+    <!-- SOBRE -->
+    <section id="sobre">
+      <div class="container">
+        <div class="image">
+          <img
+            src="img/img-sobre.jpeg"
+            alt="Pessoa Correndo ao Ar Livre"
+            class="image-sobre"
+          />
+        </div>
+
+        <div class="text-sobre">
+          <h2>O Que é Corrida de Rua?</h2>
+          <p>
+            A corrida de rua é uma modalidade de atletismo praticada em vias
+            públicas, como ruas, avenidas ou parques. Ela abrange desde
+            corredores amadores até profissionais, com distâncias oficiais
+            comuns de 5 km, 10 km, meia maratona (21 km) e maratona (42 km).
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SOBRE -->
-  <section id="sobre">
-    <div class="container">
-      <div class="image">
-        <img src="img/img-sobre.jpeg" alt="Pessoa Correndo ao Ar Livre" class="image-sobre">
-      </div>
+    <!-- TERMOS -->
+    <section id="termos">
+      <div class="container">
+        <div class="text-termos">
+          <h2>Termos importantes</h2>
 
-      <div class="text-sobre">
-        <h2>O Que é Corrida de Rua?</h2>
-        <p>
-          A corrida de rua é uma modalidade de atletismo praticada em vias públicas, como ruas, avenidas ou parques.
-          Ela abrange desde corredores amadores até profissionais, com distâncias oficiais comuns de 5 km, 10 km, meia maratona (21 km) e maratona (42 km).
-        </p>
-      </div>
-    </div>
-  </section>
+          <div class="cards-termos">
+            <div class="card-termos">
+              <h3>Pace</h3>
+              <p>
+                Tempo necessário para percorrer 1km. Pace (ou ritmo) na corrida
+                é o tempo que você leva para percorrer um quilômetro, geralmente
+                medido em minutos por quilômetro (min/km).
+              </p>
+            </div>
 
-  <!-- TERMOS -->
-  <section id="termos">
-    <div class="container">
-      <div class="text-termos">
-        <h2>Termos importantes</h2>
+            <div class="card-termos">
+              <h3>RP</h3>
+              <p>
+                Seu melhor tempo em determinada distância. É o menor tempo que
+                um corredor já registrou em uma distância específica (como 5km,
+                10km, meia maratona ou maratona).
+              </p>
+            </div>
 
-        <div class="cards-termos">
-          <div class="card-termos">
-            <h3>Pace</h3>
-            <p>Tempo necessário para percorrer 1km. Pace (ou ritmo) na corrida é o tempo que você leva para percorrer um quilômetro, geralmente medido em minutos por quilômetro (min/km).</p>
-          </div>
-
-          <div class="card-termos">
-            <h3>RP</h3>
-            <p>Seu melhor tempo em determinada distância. É o menor tempo que um corredor já registrou em uma distância específica (como 5km, 10km, meia maratona ou maratona).</p>
-          </div>
-
-          <div class="card-termos">
-            <h3>Distância</h3>
-            <p>Total percorrido durante a corrida. As principais distâncias oficiais são 5km, 10km, 15km, 21.097m (meia maratona) e 42.195m (maratona).</p>
+            <div class="card-termos">
+              <h3>Distância</h3>
+              <p>
+                Total percorrido durante a corrida. As principais distâncias
+                oficiais são 5km, 10km, 15km, 21.097m (meia maratona) e 42.195m
+                (maratona).
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- COMO COMEÇAR -->
-  <section id="comecar">
-    <div class="container">
-      <div class="image">
-        <img src="img/img-comecar.jpeg" alt="Iniciante correndo" class="img-comecar">
+    <!-- COMO COMEÇAR -->
+    <section id="comecar">
+      <div class="container">
+        <div class="image">
+          <img
+            src="img/img-comecar.jpeg"
+            alt="Iniciante correndo"
+            class="img-comecar"
+          />
+        </div>
+
+        <div class="text-comecar">
+          <h2>Como começar</h2>
+          <p>
+            Você não precisa ser rápido para começar, só precisa começar. <br>
+            A evolução vem com o tempo, e cada treino é um passo à frente.
+          </p>
+          <ul>
+            <li>Dê o primeiro passo no seu ritmo</li>
+            <li>Intercale caminhada e corrida sem pressão</li>
+            <li>Crie consistência treinando de 3 a 4 vezes por semana</li>
+            <li>Evolua gradualmente e celebre cada conquista</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="text-comecar">
-        <h2>Como começar</h2>
-        <ul>
-          <li>Comece devagar</li>
-          <li>Alterne caminhada e corrida</li>
-          <li>Treine de 3 a 4 vezes por semana</li>
-          <li>Evolua gradualmente</li>
-        </ul>
+    <!-- TIPOS DE TREINO -->
+    <section id="treino">
+      <div class="container">
+        <h2>Tipos de Treino</h2>
+        <p></p>
+
+        <div class="cards-treino">
+          <div class="card-treino">
+            <h3>Regenerativo (Z1)</h3>
+            <p>
+              Nem todo treino é sobre ir no limite. Aqui, o foco é recuperar,
+              respirar e seguir em movimento. É nesse ritmo leve que o corpo se
+              reconstrói para voltar mais forte no próximo desafio.
+            </p>
+          </div>
+
+          <div class="card-treino">
+            <h3>Rodagem leve (Z2)</h3>
+            <p>
+              É aqui que a evolução acontece de verdade. Um ritmo confortável,
+              constante, onde você acumula quilômetros e constrói resistência.
+              Pode parecer simples, mas é a base de tudo.
+            </p>
+          </div>
+
+          <div class="card-treino">
+            <h3>Ritmo moderado (Z3)</h3>
+            <p>
+              Agora o corpo começa a sentir. O esforço aumenta, a respiração
+              pesa, e você aprende a sustentar o desconforto. Esse é o treino
+              que te prepara para correr melhor e por mais tempo.
+            </p>
+          </div>
+
+          <div class="card-treino">
+            <h3>Treino forte / Intervalado (Z4)</h3>
+            <p>
+              Aqui é onde você se desafia de verdade. Intensidade alta, foco
+              total e muita entrega. Cada tiro é uma chance de ficar mais
+              rápido, mais forte e mais preparado.
+            </p>
+          </div>
+
+          <div class="card-treino">
+            <h3>Esforço máximo (Z5)</h3>
+            <p>
+              Esse é o seu limite. Poucos segundos, mas com tudo que você tem. É
+              onde a mente fala mais alto que o corpo — e onde você descobre do
+              que realmente é capaz.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- QUIPAMENTOS -->
-<section id="equipamentos">
-  <div class="container">
-    <h2>Equipamentos</h2>
+    <!-- QUIPAMENTOS -->
+    <section id="equipamentos">
+      <div class="container">
+        <h2>Equipamentos</h2>
 
-    <div class="cards-equip">
-      <div class="card-equip">
-        <img src="img/corre4.webp">
-        <h3>Tênis</h3>
-        <p>Escolha um modelo confortável para corrida.</p>
+        <div class="cards-equip">
+          <div class="card-equip">
+            <img src="img/corre4.webp" />
+            <h3>Tênis</h3>
+            <p>Escolha um modelo confortável para corrida.</p>
+          </div>
+
+          <div class="card-equip">
+            <img src="img/relogio.jpg" />
+            <h3>Relógio</h3>
+            <p>Acompanhe pace, distância e evolução.</p>
+          </div>
+
+          <div class="card-equip">
+            <img src="img/kitrun.webp" />
+            <h3>Roupas</h3>
+            <p>Use roupas leves e respiráveis.</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card-equip">
-        <img src="img/relogio.jpg">
-        <h3>Relógio</h3>
-        <p>Acompanhe pace, distância e evolução.</p>
+    <!-- GALERIA -->
+    <section id="galeria">
+      <div class="container">
+        <h2>Galeria</h2>
+
+        <div class="grid-galeria">
+          <img src="img/image1.jpeg" alt="foto de corredores" />
+          <img src="img/image2.jpeg" alt="foto de corredores" />
+          <img src="img/image3.jpeg" alt="foto de corredores" />
+          <img src="img/image4.jpeg" alt="foto de corredores" />
+          <img src="img/image5.jpeg" alt="foto de corredores" />
+          <img src="img/image6.jpeg" alt="foto de corredores" />
+          <img src="img/image7.jpeg" alt="foto de corredores" />
+        </div>
       </div>
+    </section>
 
-      <div class="card-equip">
-        <img src="img/kitrun.webp">
-        <h3>Roupas</h3>
-        <p>Use roupas leves e respiráveis.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>
+        © 2026 Leonardo Nascimento. Todos os direitos reservados.
+        <a href="https://www.instagram.com/_leocodes/" target="_blank"
+          >Instagram</a
+        >
+        <a href="https://github.com/leocodes-al" target="_blank">GitHub</a>
+      </p>
+    </footer>
 
-  <!-- GALERIA -->
-<section id="galeria">
-  <div class="container">
-    <h2>Galeria</h2>
-
-    <div class="grid-galeria">
-      <img src="img/image1.jpeg" alt="">
-      <img src="img/image2.jpeg" alt="">
-      <img src="img/image3.jpeg" alt="">
-      <img src="img/image4.jpeg" alt="">
-
-    </div>
-  </div>
-</section>
-
-  <!-- FOOTER -->
-<footer id="footer">
-    <p>
-      © 2026 Leonardo Nascimento. Todos os direitos reservados.
-      <a href="https://www.instagram.com/_leocodes/" target="_blank">Instagram</a>
-      <a href="https://github.com/leocodes-al" target="_blank">GitHub</a>
-    </p>
-</footer>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,52 +1,158 @@
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
-  /* NAVBAR */
-  .menu {
-    display: none;
+  * {
+    --font-size-h2: 1.4rem;
+    --font-size-p: 0.8rem;
   }
 
   .navbar {
     padding: 15px 20px;
   }
 
-  /* CONTAINER */
+  .navbar h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  #menu-btn {
+    display: block;
+    margin-left: auto;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    background: rgba(15, 15, 15, 0.95);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+  
   .container {
+    max-width: 40rem;
     flex-direction: column;
     text-align: center;
   }
 
-  /* HERO */
-  #hero {
-    padding: 0 20px;
-  }
-
-  .text-hero p {
-    font-size: 16px;
-  }
-
-  /* IMAGENS */
-  .image {
-    max-width: 100%;
-  }
-
-  /* SECTIONS */
   section {
     min-height: auto;
     padding: 60px 20px;
   }
 
-  /* SOBRE */
-  .text-sobre p {
-    max-width: 100%;
+  /* HERO */
+  .text-hero h1 {
+    font-size: 2rem;
   }
 
-  .cards-termos {
-    grid-template-columns: 1fr;
+  .text-hero p {
+    font-size: var(--font-size-p);
+  }
+
+  .text-hero a {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+
+  .image {
+    max-width: 80%;
+  }
+
+  /* SOBRE */
+  .image .image-sobre {
+    width: 50%;
+  }
+
+  .text-sobre h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  /* TERMOS */
+  .text-termos h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  .card-termos h3 {
+    font-size: 1rem;
+  }
+
+  .card-termos p {
+    font-size: var(--font-size-p);
+  }
+
+  /* COMEÇAR */
+  .image .img-comecar {
+    width: 80%;
+  }
+
+  .text-comecar h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  .text-comecar p {
+    font-size: var(--font-size-p);
+  }
+
+  .text-comecar ul li {
+    text-align: left;
+  }
+
+  /*  TIPO DE TREINO */
+  #treino h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  .card-treino {
+    padding: 10px;
+  }
+
+  .card-treino h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .card-treino p {
+    font-size: var(--font-size-p);
+  }
+
+  /* EQUIPAMENTOS */
+  #equipamentos h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  .cards-equip {
+    gap: 10px;
+  }
+
+  .card-equip h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
   }
 
   /* GALERIA */
-  .grid-galeria {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  #galeria h2 {
+    font-size: var(--font-size-h2);
   }
 
+  .grid-galeria {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .grid-galeria img {
+    min-width: 60%;
+    scroll-snap-align: center;
+  }
 }

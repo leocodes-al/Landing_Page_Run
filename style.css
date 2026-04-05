@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --font-size-h2: 2rem;
+  --font-size-p: 1rem;
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -30,6 +31,7 @@ body {
 
 .navbar h2 {
   color: #FC4C02;
+  font-size: 1.4rem;
 }
 
 .menu {
@@ -39,9 +41,9 @@ body {
 }
 
 .menu a {
+  font-size: 1rem;
   text-decoration: none;
   color: #B3B3B3;
-  font-size: 16px;
   transition: 0.3s;
 }
 
@@ -49,9 +51,16 @@ body {
   color: #FC4C02;
 }
 
-/* PADRÃO PARA TODAS AS SECTION DO PROJETO*/
+#menu-btn {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* PADRÃO PARA TODAS AS SECTION - Compensar a altura da navbar fixa */
 section {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 /* HERO */
@@ -63,9 +72,9 @@ section {
   padding: 0 20px;
 }
 
-/* PADRÃO PARA TODOS OS CONTAINER DO PROJETO */
+/* PADRÃO PARA TODOS OS CONTAINER */
 .container {
-  max-width: 1200px;
+  max-width: 60rem;
   width: 100%;
   margin: 0 auto;
 
@@ -80,20 +89,21 @@ section {
 }
 
 .text-hero h1 {
-  font-size: clamp(28px, 5vw, 48px);
+  font-size: 3.4rem;
   color: #FC4C02;
   margin-bottom: 15px;
 }
 
 .text-hero p {
-  font-size: 18px;
+  font-size: var(--font-size-p);
   color: #111111;
   margin-bottom: 25px;
 }
 
 .text-hero a {
+  font-size: 0.8rem;
   display: inline-block;
-  padding: 12px 28px;
+  padding: 10px 20px;
   background: #FC4C02;
   color: white;
   text-decoration: none;
@@ -130,7 +140,7 @@ section {
   justify-content: center;
   width: 100%;
 
-  max-width: 700px;
+  /*max-width: 700px;*/
 }
 
 .image .image-hero {
@@ -146,26 +156,25 @@ section {
   align-items: center;
 
   padding: 0 20px;
-  background: #111111;
+  background: #0F0F0F;
   
 }
 
 .image .image-sobre {
-  width: 100%;
-  max-width: 300px;
+  width: 70%;
+  max-width: 700px;
   border-radius: 10px;
-  filter: brightness(0.9);
 }
 
 .text-sobre h2 {
-  font-size: clamp(24px, 4vw, 36px);
+  font-size: var(--font-size-h2);
   color: #FFFFFF;
   margin-bottom: 15px;
   position: relative;
 }
 
 .text-sobre p {
-  font-size: 16px;
+  font-size: var(--font-size-p);
   color: #B3B3B3;
   line-height: 1.7;
   max-width: 500px;
@@ -193,7 +202,7 @@ section {
 }
 
 .text-termos h2 {
-  font-size: 36px;
+  font-size: var(--font-size-h2);
   color: #FC4C02;
   margin-bottom: 25px;
   position: relative;
@@ -207,13 +216,13 @@ section {
 
 .card-termos h3 {
   color: #FC4C02;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-bottom: 8px;
 }
 
 .card-termos p {
   color: #111111;
-  font-size: 14px;
+  font-size: var(--font-size-p);
   line-height: 1.5;
 }
 
@@ -242,7 +251,6 @@ section {
   width: 100%;
   max-width: 700px;
   border-radius: 10px;
-  filter: brightness(0.9);
 }
 
 .text-comecar {
@@ -250,10 +258,17 @@ section {
 }
 
 .text-comecar h2 {
-  font-size: clamp(24px, 4vw, 36px);
+  font-size: var(--font-size-h2);
   color: #FFFFFF;
   margin-bottom: 20px;
   position: relative;
+}
+
+.text-comecar p {
+  font-size: var(--font-size-p);
+  color: #B3B3B3;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
 
 .text-comecar h2::after {
@@ -274,10 +289,65 @@ section {
 
 .text-comecar ul li {
   color: #B3B3B3;
-  font-size: 16px;
+  font-size: var(--font-size-p);
   margin-bottom: 12px;
   position: relative;
   padding-left: 25px;
+}
+
+/* TIPOS DE TREINO */
+#treino {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+  background: #d6d6d6;
+}
+
+#treino h2 {
+  font-size: var(--font-size-h2);
+  color: #FC4C02;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#treino h2::after {
+  content: "";
+  display: block;
+
+  width: 60px;
+  height: 3px;
+
+  background: #FC4C02;
+  margin: 10px auto 0;
+}
+
+.cards-treino {
+  display: grid;
+  gap: 20px;
+}
+
+.card-treino {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.card-treino h3 {
+  font-size: 1.2rem;
+  color: #FC4C02;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-treino p {
+  color: #111111;
+  font-size: var(--font-size-p);
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* EQUIPAMENTOS */
@@ -291,9 +361,8 @@ section {
 }
 
 #equipamentos h2 {
-  font-size: clamp(24px, 4vw, 36px);
+  font-size: var(--font-size-h2);
   color: #FC4C02;
-  margin-bottom: 50px;
   position: relative;
 }
 
@@ -330,6 +399,7 @@ section {
 }
 
 .card-equip h3 {
+  font-size: 1.2rem;
   color: #FC4C02;
   margin-bottom: 10px;
   text-align: center;
@@ -337,7 +407,7 @@ section {
 
 .card-equip p {
   color: #B3B3B3;
-  font-size: 14px;
+  font-size: 0.8rem;
   text-align: center;
 }
 
@@ -357,9 +427,8 @@ section {
 }
 
 #galeria h2 {
-  font-size: clamp(24px, 4vw, 36px);
+  font-size: var(--font-size-h2);
   color: #FFFFFF;
-  margin-bottom: 50px;
   position: relative;
 }
 
@@ -382,7 +451,7 @@ section {
 
 .grid-galeria img {
   width: 100%;
-  height: 280px; /* pode ajustar */
+  height: 280px;
   object-fit: cover;
   object-position: top;
 
@@ -404,12 +473,13 @@ section {
 
 #footer p {
   color: #777;
-  font-size: 14px;
+  font-size: var(--font-size-p);
 }
 
 #footer a {
   color: #FC4C02;
   text-decoration: none;
+  font-size: var(--font-size-p);
 }
 
 #footer a:hover {
